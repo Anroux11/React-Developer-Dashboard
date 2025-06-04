@@ -1,12 +1,13 @@
 import "./App.css";
-import Header from "./components/Header";
-import UserCard from "./components/UserCard";
+import Home from "./pages/home";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([{ path: "/", element: <Home /> }]);
 
 function App() {
   return (
     <>
-      <Header />
-      <UserCard />
+      <RouterProvider router={router} />
     </>
   );
 }
