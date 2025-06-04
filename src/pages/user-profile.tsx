@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import type { User } from "../models/user";
 import { getUser } from "../services/githubServices";
 import Loader from "../components/Loader";
-import { DiVim } from "react-icons/di";
 
 const UserProfile = () => {
   const { login } = useParams();
