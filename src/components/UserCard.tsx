@@ -1,0 +1,37 @@
+import { FaStar } from "react-icons/fa";
+
+const UserCard = () => {
+  return (
+    <div className="w-full max-w-sm bg-white mt-10 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+      <div className="flex flex-col items-center pb-10 pt-10 border-white-200">
+        <img
+          className="w-24 h-24 mb-3 rounded-full shadow-lg"
+          src="/src/assets/profilepicture.jpg"
+          alt="Profile"
+        />
+        <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+          Bonnie Green
+        </h5>
+        <span className="text-sm text-gray-500 dark:text-gray-400">
+          Frontend Developer
+        </span>
+        <div className="flex mt-4 md:mt-6">
+          <a
+            href="/user-rofile"
+            className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 hover:"
+          >
+            View More
+          </a>
+          <a
+            href="/favorites"
+            className="inline-flex items-center ml-2 px-4 py-2 text-lg font-medium text-center text-white rounded-lg "
+          >
+            <FaStar className="hover:text-yellow-300" />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default UserCard;
