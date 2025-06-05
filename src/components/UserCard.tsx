@@ -13,12 +13,14 @@ const UserCard: React.FC<{ user: User }> = ({ user }) => {
         <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
           {user.login}
         </h5>
+        <p className="text-sm text-gray-500 dark:text-gray-400"></p>
+
         <div className="flex mt-4 md:mt-6">
           <a
             href={`/${user.login}`}
             className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 hover:"
           >
-            View More
+            View Profile
           </a>
           <a
             href="/favorites"
