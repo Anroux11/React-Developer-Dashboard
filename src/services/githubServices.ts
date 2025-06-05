@@ -9,6 +9,7 @@ const axiosInstance = axios.create({
   },
 });
 
+console.log("test");
 export const getUsers = async (search?: string) => {
   const searchParams = new URLSearchParams();
   if (search) {
