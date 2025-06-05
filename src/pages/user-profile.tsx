@@ -40,7 +40,7 @@ const UserProfile = () => {
           <Loader />
         </div>
       ) : (
-        <div className="w-100 px-6 py-6 text-center bg-gray-800 rounded-lg lg:mt-0 xl:px-10 ">
+        <div className="w-100 px-6 py-6 text-center bg-gray-800 rounded-lg lg:mt-0 xl:px-10 sm:px-10 md: cols-1">
           <img
             className="w-45 h-45 mb-3 rounded-full mx-auto rounded-full h-36 w-36 shadow-[-7px_-6px_45px_-4px_rgba(239,_230,_230,_0.5)]"
             src={user?.avatar_url}
