@@ -1,5 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import type { User } from "../models/user";
+import { Link } from "react-router-dom";
 
 const UserCard: React.FC<{ user: User }> = ({ user }) => {
   return (
@@ -16,18 +17,18 @@ const UserCard: React.FC<{ user: User }> = ({ user }) => {
         <p className="text-sm text-gray-500 dark:text-gray-400"></p>
 
         <div className="flex mt-4 md:mt-6">
-          <a
-            href={`/${user.login}`}
+          <Link
+            to={`/${user.login}`}
             className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 hover:"
           >
             View Profile
-          </a>
-          <a
-            href="/favorites"
+          </Link>
+          <Link
+            to="/favorites"
             className="inline-flex items-center ml-2 px-4 py-2 text-lg font-medium text-center text-white rounded-lg "
           >
             <FaStar className="hover:text-yellow-300" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

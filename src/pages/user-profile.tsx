@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 // import type { User } from "../models/user";
 import { getUser } from "../services/githubServices";
 import Loader from "../components/Loader";
@@ -72,12 +72,12 @@ const UserProfile = () => {
           <div className="space-y-3">
             <div className="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
               <div className="mt-5">
-                <a
-                  href={user?.html_url}
+                <Link
+                  to={`${user?.html_url}`}
                   className="inline-flex items-center  px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800"
                 >
                   Github
-                </a>
+                </Link>
               </div>
             </div>
           </div>
