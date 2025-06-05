@@ -14,6 +14,7 @@ const UserCard: React.FC<{ user: User }> = ({ user }) => {
           {user.login}
         </h5>
         <p className="text-sm text-gray-500 dark:text-gray-400"></p>
+
         <div className="flex mt-4 md:mt-6">
           <a
             href={`/${user.login}`}

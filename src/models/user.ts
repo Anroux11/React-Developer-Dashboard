@@ -1,4 +1,4 @@
-export interface User {
+export type User = {
   avatar_url: string;
   id: number;
   login: string;
@@ -9,4 +9,4 @@ export interface User {
   html_url: string;
   name: string;
   public_repos: number;
-}
+};
