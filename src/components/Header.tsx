@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GrClose } from "react-icons/gr";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Favorites } from "../pages/favorites"
 
@@ -20,12 +21,12 @@ const Header = () => {
         Git Dashboard
       </a>
       <nav className="hidden sm:flex justify-between items-center gap-4 font-bold">
-        <a href="*" className="hover:text-gray-500 text-gray-500">
+        <Link to="*" className="hover:text-gray-500 text-gray-500">
           Home
-        </a>
-        <a href="/favorites" className="hover:text-gray-500 text-gray-500">
+        </Link>
+        <Link to="/favorites" className="hover:text-gray-500 text-gray-500">
           Favorites
-        </a>
+        </Link>
       </nav>
       <nav className="sm:hidden flex flex-col items-end gap-1 font-semibold">
         <button
