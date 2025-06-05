@@ -21,7 +21,7 @@ const Header = () => {
         Git Dashboard
       </a>
       <nav className="hidden sm:flex justify-between items-center gap-4 font-bold">
-        <Link to="*" className="hover:text-gray-500 text-gray-500">
+        <Link to="/" className="hover:text-gray-500 text-gray-500">
           Home
         </Link>
         <Link to="/favorites" className="hover:text-gray-500 text-gray-500">
