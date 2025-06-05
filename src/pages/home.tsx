@@ -30,13 +30,15 @@ const Home = () => {
   return (
     <>
       {isDataLoading ? (
-        <Loader />
+        <div className="h-screen flex items-center justify-center">
+          <Loader />
+        </div>
       ) : (
         <div>
           <Header />
           <SearchBar onSearch={onSearch} />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-            {users.map((user) => (
+            {users?.map((user) => (
               <UserCard user={user} />
             ))}
           </div>
