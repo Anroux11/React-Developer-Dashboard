@@ -1,15 +1,7 @@
-import { RotatingLines } from "react-loader-spinner";
+import { ClipLoader } from "react-spinners";
 
 const Loader = () => {
-  return (
-    <RotatingLines
-      strokeColor="grey"
-      strokeWidth="5"
-      animationDuration="0.75"
-      width="96"
-      visible={true}
-    />
-  );
+  return <ClipLoader />;
 };
 
 export default Loader;
